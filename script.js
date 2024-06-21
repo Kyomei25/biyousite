@@ -37,4 +37,8 @@ function showSlide() {
 
 setInterval(showSlide, 5000);
 
+
+
+
+
 // ヒーロー画像のスライド切り替えのコードは変更なし

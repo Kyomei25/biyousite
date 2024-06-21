@@ -14,7 +14,7 @@
         <h1>Kyomei</h1>
       </div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">ABOUT</a></li>
         <li><a href="#subscription">SUBSCRIPTION</a></li>
         <li><a href="#shoplist">SHOPLIST</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -69,24 +69,81 @@
 
   <main>
     <section id="about">
-      <h2>About</h2>
-      <p>Kyomeiは、自然由来の成分にこだわった化粧品ブランドです。肌に優しく、効果的なスキンケアを提供します。</p>
+      <div class="about-container">
+        <div class="about-content">
+          <div class="about-header">
+            <h2>ABOUT</h2>
+            <a href="#" class="read-more">詳しく見る</a>
+          </div>
+          <p>Kyomeiは、自然由来の成分にこだわった化粧品ブランドです。肌に優しく、効果的なスキンケアを提供します。</p>
+        </div>
+        <div class="about-image">
+          <img src="about-image.png" alt="About Kyomei">
+        </div>
+      </div>
     </section>
-
-    <section id="subscription">
-      <h2>SUBSCRIPTION</h2>
+    
+    <!-- SUBSCRIPTION セクション -->
+<section id="subscription">
+  <div class="section-container">
+    <div class="section-image">
+      <img src="subscription-image.png" alt="Subscription">
+    </div>
+    <div class="section-content">
+      <div class="section-header">
+        <h2>SUBSCRIPTION</h2>
+        <a href="#" class="read-more">詳しく見る</a>
+      </div>
       <p>Kyomeiのスキンケア製品を定期的にお届けするサブスクリプションサービスをご利用ください。お得な価格でご購入いただけます。</p>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="shoplist">
-      <h2>SHOPLIST</h2>
+<!-- SHOPLIST セクション -->
+<section id="shoplist">
+  <div class="section-container">
+    <div class="section-content">
+      <div class="section-header">
+        <h2>SHOPLIST</h2>
+        <a href="#" class="read-more">詳しく見る</a>
+      </div>
       <p>Kyomeiの製品は、全国の取扱店でお買い求めいただけます。お近くの取扱店を探す場合は、こちらをご覧ください。</p>
-    </section>
+    </div>
+    <div class="section-image">
+      <img src="shoplist-image.png" alt="Shoplist">
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-      <h2>CONTACT</h2>
-      <p>ご質問やご意見は、お問い合わせフォームよりお気軽にお寄せください。</p>
-    </section>
+<section id="contact">
+  <div class="section-container">
+    <div class="section-content">
+      <div class="section-header">
+        <h2>CONTACT</h2>
+      </div>
+      <p>ご質問やご意見は、フォームよりお気軽にお寄せください。</p>
+    </div>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">件名</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">送信</button>
+    </form>
+  </div>
+</section>
   </main>
 
   <footer>
