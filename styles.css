@@ -117,7 +117,7 @@ nav {
 .hero {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 100vh; /* ビューポートの高さに合わせる */
   overflow: hidden;
 }
 
@@ -139,6 +139,25 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center; /* 画像の中心を表示 */
+}
+
+/* スマートフォン向けのスタイル */
+@media (max-width: 767px) {
+  .hero {
+    height: 50vh; /* スマートフォンでは画面の半分の高さに */
+  }
+
+  .hero-slide img {
+    object-position: center top; /* 画像の上部を優先的に表示 */
+  }
+}
+
+/* タブレット向けのスタイル */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    height: 70vh; /* タブレットでは画面の70%の高さに */
+  }
 }
 
 /* セクション */
